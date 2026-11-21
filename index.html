@@ -26,7 +26,8 @@ a{color:#FFFFFF}a:hover{color:#FFDF31}
 @keyframes pm-rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
 @keyframes pm-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 .pm-spin{animation:pm-spin 26s linear infinite;transform-origin:50% 50%}
-.pm-marquee{animation:pm-marquee 34s linear infinite}
+.pm-marquee{animation:pm-marquee 30s linear infinite}
+.pm-marquee:hover{animation-play-state:paused}
 .pm-dot{animation:pm-pulse 2.4s ease-in-out infinite}
 .pm-float{animation:pm-float 6s ease-in-out infinite}
 .pm-rise{animation:pm-rise .9s cubic-bezier(.2,.7,.2,1) both}
@@ -105,9 +106,7 @@ html{scroll-behavior:smooth}
 <defs><path id="pm-circ" d="M170,170 m-140,0 a140,140 0 1,1 280,0 a140,140 0 1,1 -280,0"></path></defs>
 <text style="font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 600; letter-spacing: 5px" fill="#FFDF31"><textPath href="#pm-circ">PONDER MEDIA &#10022; PONDER MEDIA &#10022; PONDER MEDIA &#10022; PONDER MEDIA &#10022;</textPath></text>
 </svg>
-<div style="position: absolute; inset: 62px; border-radius: 50%; background: #FFDF31; display: flex; align-items: center; justify-content: center; box-shadow: 0 30px 80px rgba(29,28,45,0.35)">
-<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDMuMTkgMTc2LjkiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNWQxN2ViO308L3N0eWxlPjwvZGVmcz48ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIj48ZyBpZD0iTGF5ZXJfMS0yIiBkYXRhLW5hbWU9IkxheWVyIDEiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE0Ljc0LDE0MC4wNUExNC43NCwxNC43NCwwLDAsMSwwLDEyNS4zMWE1MS42Niw1MS42NiwwLDAsMSw1MS42LTUxLjYsMjIuMTIsMjIuMTIsMCwwLDAsMC00NC4yM0gyOS40OHYzLjY5QTE0Ljc0LDE0Ljc0LDAsMCwxLDAsMzMuMTdWMTQuNzRBMTQuNzQsMTQuNzQsMCwwLDEsMTQuNzQsMEg1MS42YTUxLjYsNTEuNiwwLDAsMSwwLDEwMy4xOSwyMi4xNCwyMi4xNCwwLDAsMC0yMi4xMiwyMi4xMkExNC43NCwxNC43NCwwLDAsMSwxNC43NCwxNDAuMDVaIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTEiIGN4PSIxNC43NCIgY3k9IjE2Mi4xNiIgcj0iMTQuNzQiLz48L2c+PC9nPjwvc3ZnPg==" alt="" aria-hidden="true" style="height: 130px; width: auto">
-</div>
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZGYzMTt9LmNscy0ye2ZpbGw6IzVkMTdlYjt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTUwIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTI2LjUyLDIwNi43NkExNC43NSwxNC43NSwwLDAsMSwxMTEuNzcsMTkyYTUxLjY1LDUxLjY1LDAsMCwxLDUxLjYtNTEuNTksMjIuMTIsMjIuMTIsMCwwLDAsMC00NC4yM0gxNDEuMjZ2My42OWExNC43NSwxNC43NSwwLDAsMS0yOS40OSwwVjgxLjQ1YTE0Ljc0LDE0Ljc0LDAsMCwxLDE0Ljc1LTE0Ljc0aDM2Ljg1YTUxLjYsNTEuNiwwLDEsMSwwLDEwMy4xOUEyMi4xNCwyMi4xNCwwLDAsMCwxNDEuMjYsMTkyLDE0Ljc0LDE0Ljc0LDAsMCwxLDEyNi41MiwyMDYuNzZaIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTIiIGN4PSIxMjYuNTIiIGN5PSIyMjguODciIHI9IjE0Ljc0Ii8+PC9nPjwvZz48L3N2Zz4=" alt="Ponder Media question-mark P in a yellow circle" style="position: absolute; inset: 62px; width: calc(100% - 124px); height: calc(100% - 124px); border-radius: 50%; box-shadow: 0 30px 80px rgba(29,28,45,0.35)">
 </div>
 </div>
 </section>
@@ -117,7 +116,7 @@ html{scroll-behavior:smooth}
 <section id="what" style="max-width: 1280px; margin: 0 auto; padding: 140px 32px 128px">
 <div style="margin-bottom: 64px">
 <span style="display: inline-flex; align-items: center; min-height: 34px; padding: 0 16px; border-radius: 999px; background: #5D17EB; color: #FFDF31; font-size: 13px; font-weight: 600; letter-spacing: 0.08em">WHAT WE DO</span>
-<h2 style="margin: 24px 0 0; font-weight: 700; font-size: clamp(36px, 4.6vw, 64px); line-height: 1; letter-spacing: -0.035em">A clearer direction. <span style="color: #5D17EB">Then the work.</span></h2>
+<h2 style="margin: 24px 0 0; font-weight: 700; font-size: clamp(36px, 4.6vw, 64px); line-height: 1; letter-spacing: -0.035em">The work goes <span style="color: #5D17EB">well beyond the writing</span></h2>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px">
 <article class="pm-card" style="padding: 36px; border-radius: 28px; background: #FFFFFF; border: 1px solid #ECECF4; display: flex; flex-direction: column; gap: 24px">
@@ -125,35 +124,35 @@ html{scroll-behavior:smooth}
 <span style="font-size: 15px; font-weight: 700; color: #5D17EB">01</span>
 <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
-<h3 style="margin: 0; font-weight: 600; font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; color: #1D1C2D">Content strategy and positioning</h3>
-<p style="margin: auto 0 0; font-size: 15px; line-height: 1.7; color: #515170; font-weight: 300">We get into the product and the market before we start writing. That means speaking to your team, understanding your customers and working out what deserves attention. Then we turn that thinking into positioning, messaging and a content strategy your team can actually use.</p>
+<h3 style="margin: 0; font-weight: 600; font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; color: #1D1C2D">Content &amp; thought leadership</h3>
+<p style="margin: auto 0 0; font-size: 15px; line-height: 1.7; color: #515170; font-weight: 300">We work closely with your experts, dig into the research and find the angles worth exploring. We know the industry well enough to ask the right questions, challenge assumptions and turn technical knowledge into content that has something meaningful to say.</p>
 </article><article class="pm-card" style="padding: 36px; border-radius: 28px; background: #FFFFFF; border: 1px solid #ECECF4; display: flex; flex-direction: column; gap: 24px">
 <div style="display: flex; justify-content: space-between; align-items: center">
 <span style="font-size: 15px; font-weight: 700; color: #5D17EB">02</span>
 <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
-<h3 style="margin: 0; font-weight: 600; font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; color: #1D1C2D">Research-led content and thought leadership</h3>
-<p style="margin: auto 0 0; font-size: 15px; line-height: 1.7; color: #515170; font-weight: 300">The best material often comes from the people inside your business. We interview them, research the subject and build the piece around what we find. From industry reports to customer stories and long-form articles, we create content grounded in real expertise.</p>
+<h3 style="margin: 0; font-weight: 600; font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; color: #1D1C2D">Strategy &amp; positioning</h3>
+<p style="margin: auto 0 0; font-size: 15px; line-height: 1.7; color: #515170; font-weight: 300">We help you figure out which conversations your brand should be part of, what you have to say and how to turn that into a strategy your team can put to work.</p>
 </article><article class="pm-card" style="padding: 36px; border-radius: 28px; background: #FFFFFF; border: 1px solid #ECECF4; display: flex; flex-direction: column; gap: 24px">
 <div style="display: flex; justify-content: space-between; align-items: center">
 <span style="font-size: 15px; font-weight: 700; color: #5D17EB">03</span>
 <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
-<h3 style="margin: 0; font-weight: 600; font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; color: #1D1C2D">Product marketing and launches</h3>
-<p style="margin: auto 0 0; font-size: 15px; line-height: 1.7; color: #515170; font-weight: 300">A launch creates a lot of work for a lot of people. We help shape the message, plan the rollout and create the material needed to bring new products to market. We work closely with product, marketing and sales so the story holds together wherever customers encounter it.</p>
+<h3 style="margin: 0; font-weight: 600; font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; color: #1D1C2D">Campaigns, launches &amp; GTM</h3>
+<p style="margin: auto 0 0; font-size: 15px; line-height: 1.7; color: #515170; font-weight: 300">We get involved early, working across marketing, product and sales to shape the messaging, plan the rollout and create the content needed to bring your ideas to market.</p>
 </article><article class="pm-card" style="padding: 36px; border-radius: 28px; background: #FFFFFF; border: 1px solid #ECECF4; display: flex; flex-direction: column; gap: 24px">
 <div style="display: flex; justify-content: space-between; align-items: center">
 <span style="font-size: 15px; font-weight: 700; color: #5D17EB">04</span>
 <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
-<h3 style="margin: 0; font-weight: 600; font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; color: #1D1C2D">Executive content and conversations</h3>
-<p style="margin: auto 0 0; font-size: 15px; line-height: 1.7; color: #515170; font-weight: 300">Some of the best ideas emerge in conversation. We work with founders and industry experts on podcasts, webinars, events and executive content, helping bring those ideas out and put them to work beyond the original conversation.</p>
+<h3 style="margin: 0; font-weight: 600; font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; color: #1D1C2D">Executive content &amp; conversations</h3>
+<p style="margin: auto 0 0; font-size: 15px; line-height: 1.7; color: #515170; font-weight: 300">We work with founders and industry experts on podcasts, webinars and events, helping bring their knowledge and perspectives to a wider audience.</p>
 </article>
 </div>
 </section>
 
 <!-- ============ SELECTED EXPERIENCE TICKER (yellow) ============ -->
-<section id="teams" style="background: #FFDF31; padding: 30px 0 24px; overflow: hidden" aria-label="Selected experience">
+<section id="teams" style="background: #FFDF31; padding: 30px 0 24px; overflow: hidden" aria-label="Teams we've worked with">
 <div style="max-width: 1280px; margin: 0 auto 16px; padding: 0 32px; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; color: #1D1C2D">TEAMS WE'VE WORKED WITH</div>
 <div style="display: flex; width: max-content" class="pm-marquee">
 <div style="display: flex; align-items: center; gap: 56px; padding-right: 56px; white-space: nowrap"><span style="display:inline-flex;align-items:center;height:68px;padding:0 32px;border-radius:999px;background:#1D1C2D"><span class="tg-primer" role="img" aria-label="Primer"></span></span><span style="display:inline-flex;align-items:center;height:68px;padding:0 32px;border-radius:999px;background:#1D1C2D"><span class="tg-reown" role="img" aria-label="Reown (formerly WalletConnect)"></span></span><span style="display:inline-flex;align-items:center;height:68px;padding:0 32px;border-radius:999px;background:#1D1C2D"><span class="tg-coinpayments" role="img" aria-label="CoinPayments"></span></span><span style="display:inline-flex;align-items:center;height:68px;padding:0 32px;border-radius:999px;background:#1D1C2D"><span class="tg-outlier" role="img" aria-label="Outlier Ventures"></span></span><span style="display:inline-flex;align-items:center;height:68px;padding:0 32px;border-radius:999px;background:#1D1C2D"><span class="tg-telefonica" role="img" aria-label="Telefónica"></span></span><span style="display:inline-flex;align-items:center;height:68px;padding:0 32px;border-radius:999px;background:#1D1C2D"><span class="tg-qolo" role="img" aria-label="Qolo"></span></span><span style="display:inline-flex;align-items:center;height:68px;padding:0 32px;border-radius:999px;background:#1D1C2D"><span class="tg-checkout" role="img" aria-label="Checkout.com"></span></span><span style="display:inline-flex;align-items:center;height:68px;padding:0 32px;border-radius:999px;background:#1D1C2D"><span style="color:#FFFFFF;font-weight:700;font-size:22px;letter-spacing:-0.01em;white-space:nowrap">TEDx <span style="font-weight:400">Madrid</span></span></span></div>
@@ -168,15 +167,28 @@ html{scroll-behavior:smooth}
 <div class="pm-split" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px">
 <div>
 <span style="display: inline-flex; align-items: center; min-height: 34px; padding: 0 16px; border-radius: 999px; background: #FFDF31; color: #5D17EB; font-size: 13px; font-weight: 600; letter-spacing: 0.08em">HOW WE WORK</span>
-<h2 style="margin: 24px 0 0; font-weight: 700; font-size: clamp(36px, 4.4vw, 60px); line-height: 1.02; letter-spacing: -0.035em">Part of your team. <span style="color: #FFDF31">Responsible for the work.</span></h2>
+<h2 style="margin: 24px 0 0; font-weight: 700; font-size: clamp(36px, 4.4vw, 60px); line-height: 1.02; letter-spacing: -0.035em">Consider us <span style="color: #FFDF31">part of the team</span></h2>
 </div>
 <div>
-<p style="margin: 0; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; color: #E9DEFF; font-weight: 300">You might have a marketing team that needs more senior support, a product launch that needs someone to take charge, or an important project that keeps getting pushed down the list.</p>
-<p style="margin: 24px 0 0; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; color: #E9DEFF; font-weight: 300">We work closely with your team to understand the product and make decisions about what matters. Then we take ownership of the work and see it through.</p>
-<p style="margin: 24px 0 0; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; color: #E9DEFF; font-weight: 300">Whether it&rsquo;s a focused project or ongoing embedded support, you get someone who can contribute to the thinking and take responsibility for the delivery.</p>
+<p style="margin: 0; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; color: #E9DEFF; font-weight: 300">We don&rsquo;t need a perfectly polished brief to get started. We&rsquo;re comfortable joining the conversations, asking questions, challenging ideas and figuring things out alongside your team. Sometimes that means taking a project from start to finish. Other times, we&rsquo;re part of your weekly meetings, working across priorities as they change. Either way, we take ownership of the work and see it through.</p>
 </div>
 </div>
 </div>
+
+<!-- ============ WHAT WE'RE EXPLORING NEXT (dark continues) ============ -->
+<section id="exploring" style="background: #1D1C2D; color: #FFFFFF">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 32px 140px">
+<div class="pm-split" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px">
+<div>
+<span style="display: inline-flex; align-items: center; min-height: 34px; padding: 0 16px; border-radius: 999px; background: #FFDF31; color: #5D17EB; font-size: 13px; font-weight: 600; letter-spacing: 0.08em">WHAT WE'RE EXPLORING NEXT</span>
+<h2 style="margin: 24px 0 0; font-weight: 700; font-size: clamp(36px, 4.4vw, 60px); line-height: 1.02; letter-spacing: -0.035em">Making sense of <span style="color: #FFDF31">search in the age of AI</span></h2>
+</div>
+<div>
+<p style="margin: 0; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; color: #E9DEFF; font-weight: 300">As people increasingly turn to AI for answers and recommendations, we&rsquo;re exploring how Generative Engine Optimization (GEO) is changing the way brands approach content strategy and online visibility.</p>
+</div>
+</div>
+</div>
+</section>
 
 <!-- ============ BEHIND PONDER MEDIA (dark continues) ============ -->
 <section id="about" style="background: #1D1C2D; color: #FFFFFF; padding: 0 16px 32px">
@@ -186,8 +198,7 @@ html{scroll-behavior:smooth}
 <div>
 <span style="display: inline-flex; align-items: center; min-height: 34px; padding: 0 16px; border-radius: 999px; background: #5D17EB; color: #FFDF31; font-size: 13px; font-weight: 600; letter-spacing: 0.08em">BEHIND PONDER MEDIA</span>
 <h2 style="margin: 24px 0 0; font-weight: 700; font-size: clamp(34px, 4vw, 56px); line-height: 1.02; letter-spacing: -0.035em">Hi, I&rsquo;m <span style="color: #FFDF31">Sarah.</span></h2>
-<p style="margin: 28px 0 0; max-width: 720px; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; color: #E9DEFF; font-weight: 300">I&rsquo;m the strategist behind Ponder Media. I&rsquo;ve worked both inside fintech marketing teams and as an outside partner, so I know how much work sits between a good idea and something you can actually publish.</p>
-<p style="margin: 24px 0 0; max-width: 720px; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; color: #E9DEFF; font-weight: 300">I like getting into the details, asking the questions that make technical subjects interesting and being involved in the decisions that shape the final work.</p>
+<p style="margin: 28px 0 0; max-width: 720px; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; color: #E9DEFF; font-weight: 300">My background spans financial journalism, content strategy and marketing across fintech, payments and Web3. I&rsquo;ve worked inside marketing teams and as an external partner, so I know the industry and what it takes to turn an ambitious marketing plan into finished work. Ponder Media brings that experience directly to the teams we work with.</p>
 </div>
 </div>
 </div>
@@ -206,7 +217,7 @@ html{scroll-behavior:smooth}
 <div>
 <span style="display: inline-flex; align-items: center; min-height: 34px; padding: 0 16px; border-radius: 999px; background: #FFDF31; color: #5D17EB; font-size: 13px; font-weight: 600; letter-spacing: 0.08em">GET IN TOUCH</span>
 <h2 class="pm-contact-h2" style="margin: 24px 0 0; font-weight: 700; font-size: clamp(52px, 6vw, 72px); line-height: 0.98; letter-spacing: -0.04em">Have&nbsp;something<br><span style="color: #FFDF31">in mind?</span></h2>
-<p style="margin: 28px 0 0; max-width: 480px; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.6; color: #E9DEFF; font-weight: 300">Tell me what you&rsquo;re working on and where you could use some support. Let&rsquo;s see if we&rsquo;re a good fit.</p>
+<p style="margin: 28px 0 0; max-width: 480px; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.6; color: #E9DEFF; font-weight: 300">Tell us what you&rsquo;re working on and where you could use a hand.</p>
 <a href="mailto:sarah@ponder-media.com" style="margin-top: 36px; display: inline-block; font-size: clamp(18px, 2vw, 24px); font-weight: 500; color: #FFFFFF; text-decoration: none; border-bottom: 2px solid #FFDF31; padding-bottom: 4px">sarah@ponder-media.com</a>
 </div>
 <form id="pm-form" novalidate style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 32px; background: #FFFFFF; color: #1D1C2D" aria-label="Contact form">
@@ -220,7 +231,7 @@ html{scroll-behavior:smooth}
 <textarea class="pm-input" name="message" required rows="3" placeholder="Tell us about your product and who it’s for…" style="padding: 14px 18px; border-radius: 16px; border: 2px solid #E3E3EC; background: #F4F4F4; font: inherit; font-weight: 400; font-size: 16px; color: #1D1C2D; resize: vertical"></textarea>
 </label>
 <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
-<button type="submit" class="pm-btn" style="margin-top: 6px; min-height: 58px; border: 0; border-radius: 999px; background: #FF3D7F; color: #1D1C2D; font: inherit; font-weight: 600; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 12px">Let’s talk
+<button type="submit" class="pm-btn" style="margin-top: 6px; min-height: 58px; border: 0; border-radius: 999px; background: #FFDF31; color: #1D1C2D; font: inherit; font-weight: 600; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 12px">Let’s talk
 <svg width="16" height="16" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </button>
 <p id="pm-status" role="status" aria-live="polite" style="margin: 0; min-height: 20px; font-size: 14px; font-weight: 500; color: #515170"></p>
@@ -256,4 +267,4 @@ html{scroll-behavior:smooth}
 
 </div>
 </body>
-  </html>
+</html>
