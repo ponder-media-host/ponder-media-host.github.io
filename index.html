@@ -231,7 +231,7 @@ html{scroll-behavior:smooth}
 <p id="pm-status" role="status" aria-live="polite" style="margin: 0; min-height: 20px; font-size: 14px; font-weight: 500; color: #515170"></p>
 </form>
 <script>
-(function(){var f=document.getElementById("pm-form"),s=document.getElementById("pm-status");f.addEventListener("submit",function(e){e.preventDefault();if(!f.name.value.trim()||!f.email.value.trim()||!f.message.value.trim()){s.style.color="#B3124F";s.textContent="Please fill in your name, email and message.";return}var b=f.querySelector("button");b.disabled=true;s.style.color="#515170";s.textContent="Sending…";fetch("https://formsubmit.co/ajax/sarah@ponder-media.com",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:f.name.value,email:f.email.value,message:f.message.value,_honey:f._honey.value,_subject:"New message from the Ponder Media website",_template:"table"})}).then(function(r){return r.json()}).then(function(d){if(d&&(d.success===true||d.success==="true")){s.style.color="#0B7A4B";s.textContent="Thanks, your message is on its way. We will reply soon.";f.reset()}else{throw new Error("x")}}).catch(function(){s.style.color="#B3124F";s.textContent="Something went wrong. Please email sarah@ponder-media.com directly."}).then(function(){b.disabled=false})})})();
+(function(){var f=document.getElementById("pm-form"),s=document.getElementById("pm-status");f.addEventListener("submit",function(e){e.preventDefault();if(!f.name.value.trim()||!f.email.value.trim()||!f.message.value.trim()){s.style.color="#B3124F";s.textContent="Please fill in your name, email and message.";return}var b=f.querySelector("button");b.disabled=true;s.style.color="#515170";s.textContent="Sending…";var _ac=new AbortController();var _to=setTimeout(function(){_ac.abort()},20000);fetch("https://formsubmit.co/ajax/sarah@ponder-media.com",{method:"POST",signal:_ac.signal,headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:f.name.value,email:f.email.value,message:f.message.value,_honey:f._honey.value,_subject:"New message from the Ponder Media website",_template:"table"})}).then(function(r){clearTimeout(_to);return r.json()}).then(function(d){if(d&&(d.success===true||d.success==="true")){s.style.color="#0B7A4B";s.textContent="Thanks, your message is on its way. We will reply soon.";f.reset()}else{throw new Error("x")}}).catch(function(){s.style.color="#B3124F";s.textContent="Something went wrong. Please email sarah@ponder-media.com directly."}).then(function(){b.disabled=false})})})();
 </script>
 </div>
 </div>
@@ -261,4 +261,4 @@ html{scroll-behavior:smooth}
 
 </div>
 </body>
-                                       </html>
+                                                                                                            </html>
